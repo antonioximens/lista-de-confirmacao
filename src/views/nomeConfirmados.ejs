@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-mails Cadastrados</title>
+  <link rel="stylesheet" href="confirmed.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Nomes Cadastrados</h1>
+    <ol>
+      <!-- Cria um for para mostrar os emails -->
+      <% nome.forEach(nomes => { %>
+        <li>
+          <span>
+            <%= nomes %>
+          </span>
+        </li>
+        <% }); %>
+    </ol>
+    <a href="/">Voltar para a Home</a>
+  </div>
+</body>
+
+</html>
